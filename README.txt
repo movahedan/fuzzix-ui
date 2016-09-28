@@ -1,1 +1,1 @@
-<center>λ</center>
+λ
