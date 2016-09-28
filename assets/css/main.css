@@ -1,0 +1,218 @@
+@font-face {
+    font-family: 'IranianSansBold';
+        src: url('../fonts/irsansb.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+      }
+
+@font-face {
+    font-family: 'IranianSansRegular';
+        src: url('../fonts/irsans.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+      }
+
+.cbg {
+	background-image: url('../img/demo-1-bg2.jpg');
+	overflow: hidden;
+	background-size: cover;
+	background-position: center center;
+	z-index: 0;
+	position: absolute;
+}
+
+body {
+  direction: rtl !important;
+}
+
+.zz-side-nav {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  color: white;
+  font-size: 50px;
+  background: rgba(7,0,82 ,0.1); /* For browsers that do not support gradients */
+}
+
+.zz-side-nav h1 {
+  position: relative;
+  direction: rtl;
+  text-align: center;
+  transform: translateY(200%);
+  font-family: 'IranianSansRegular';
+}
+
+.profile {
+  height: 30vh;
+}
+
+.menu {
+  height: 65vh;
+  /*! padding: 0px 2em; */
+  display: block;
+}
+
+.menu li {
+  color: lightgrey;
+  width: 1.6em;
+  height: 1.6em;
+  border-radius: 50%;
+  display: inline-block;
+  list-style: none;
+  list-style-type: none;
+}
+
+.hi-icon-wrap {
+	text-align: center;
+	/*! margin: 0 auto; */
+	/*! padding: 2em 0 3em; */
+}
+
+.hi-icon-effect-8 > li {
+	display: inline-block;
+	font-size: 3rem;
+	cursor: pointer;
+	margin: 15px 30px;
+	width: 90px;
+	height: 90px;
+	border-radius: 50%;
+	text-align: center;
+	position: relative;
+	z-index: 1;
+	color: #fff;
+}
+
+.hi-icon-effect-8 > li:after {
+	pointer-events: none;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	content: '';
+	-webkit-box-sizing: content-box;
+	-moz-box-sizing: content-box;
+	box-sizing: content-box;
+}
+
+.hi-icon-effect-8 li {
+	/*! background: rgba(133,133,133,0.1); */
+	-webkit-transition: -webkit-transform ease-out 0.1s, background 0.2s;
+	-moz-transition: -moz-transform ease-out 0.1s, background 0.2s;
+	transition: transform ease-out 0.1s, background 0.2s;
+}
+
+.hi-icon-effect-8 li:after {
+	top: 0;
+	left: 0;
+	padding: 0;
+	z-index: -1;
+	box-shadow: 0 0 0 2px rgba(163,163,163,0.1);
+	opacity: 0;
+	-webkit-transform: scale(0.9);
+	-moz-transform: scale(0.9);
+	-ms-transform: scale(0.9);
+	transform: scale(0.9);
+}
+
+.hi-icon-effect-8 li:hover {
+	background: rgba(163,163,163,1);
+	-webkit-transform: scale(0.93);
+	-moz-transform: scale(0.93);
+	-ms-transform: scale(0.93);
+	transform: scale(0.93);
+	color: #fff;
+}
+
+.hi-icon-effect-8 li:hover:after {
+	-webkit-animation: sonarEffect 0.5s ease-in 5ms reverse;
+	-moz-animation: sonarEffect 0.5s ease-in 5ms reverse;
+	animation: sonarEffect 0.5s ease-in 5ms reverse;
+}
+
+@-webkit-keyframes sonarEffect {
+	0% {
+		opacity: 0.3;
+	}
+	40% {
+		opacity: 0.5;
+		box-shadow: 0 0 0 2px rgba(133,133,133,0.1), 0 0 10px 10px rgba(133,133,133,0.3), 0 0 0 10px rgba(133,133,133,0.5);
+	}
+	100% {
+		box-shadow: 0 0 0 2px rgba(133,133,133,0.1), 0 0 10px 10px rgba(133,133,133,0.3), 0 0 0 10px rgba(133,133,133,0.5);
+		-webkit-transform: scale(1.5);
+		opacity: 0;
+	}
+}
+@-moz-keyframes sonarEffect {
+	0% {
+		opacity: 0.3;
+	}
+	40% {
+		opacity: 0.5;
+		box-shadow: 0 0 0 2px rgba(133,133,133,0.1), 0 0 10px 10px rgba(133,133,133,0.3), 0 0 0 10px rgba(133,133,133,0.5);
+	}
+	100% {
+		box-shadow: 0 0 0 2px rgba(133,133,133,0.1), 0 0 10px 10px rgba(133,133,133,0.3), 0 0 0 10px rgba(133,133,133,0.5);
+		-moz-transform: scale(1.5);
+		opacity: 0;
+	}
+}
+@keyframes sonarEffect {
+	0% {
+		opacity: 0.3;
+	}
+	40% {
+		opacity: 0.5;
+		box-shadow: 0 0 0 2px rgba(133,133,133,0.1), 0 0 10px 10px rgba(133,133,133,0.3), 0 0 0 10px rgba(133,133,133,0.5);
+	}
+	100% {
+		box-shadow: 0 0 0 2px rgba(133,133,133,0.1), 0 0 10px 10px rgba(133,133,133,0.3), 0 0 0 10px rgba(133,133,133,0.5);
+		transform: scale(1.5);
+		opacity: 0;
+	}
+}
+
+
+.menu li i {
+  margin:0px auto;
+  text-align: center;
+}
+
+.menu li:hover {
+  background-color: rgba(158,158,158, 0.5);
+}
+
+.label {
+  font-size: 14px;
+  text-align: center;
+}
+
+.footer {
+  height: 5vh;
+  font-size: 14px;
+  margin-top: -10px;
+}
+
+.zz-login {
+  display: inline-block;
+  position: absolute;
+  top: 7rem;
+  left: 9rem;
+  width: 20em;
+  font-size: 16px;
+	color: white;
+}
+
+.zz-login li {
+  display: inline-block;
+  padding-left: 0.4rem;
+}
+
+.zz-login i {
+	/*! padding-right: 1rem; */
+}
+
+.zz-login a {
+  font-size: 13px;
+  padding: 10px;
+}
