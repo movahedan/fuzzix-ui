@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>فازیکس</title>
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/css/mdb.min.css" rel="stylesheet">
+  <link href="assets/css/template.css" rel="stylesheet">
+  <link href="assets/css/style.css" rel="stylesheet">
+  <link href="assets/css/login.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/jquery.mCustomScrollbar.css">
+</head>
+<body>
+  <div class='particle-network-animation'>
+    <div class="login-back"><a href="index.html"><i class="fa fa-arrow-circle-left"></i> بازگشت</a></div>
+    <div class="login-panel">
+      <div class="login-header"><h2>ورود</h2></div>
+      <!--Email validation-->
+      <div class="md-form login-input">
+          <i class="fa fa-envelope prefix"></i>
+          <input type="email" id="form9" class="form-control validate">
+          <label for="form9" data-error="wrong" data-success="right">پست الکترونیکی</label>
+      </div>
+      <!--Password validation-->
+      <div class="md-form login-input">
+          <i class="fa fa-lock prefix"></i>
+          <input type="password" id="form10" class="form-control validate">
+          <label for="form10" data-error="wrong" data-success="right">رمز عبور</label>
+      </div>
+      <center><button type="button" class="btn btn-primary login-btn">ورود</button></center>
+      <hr>
+      <div class="signup"><a href="signup.html">ثبت نام کنید</a></div>
+      <div class="forgot"><a href="forgot.html">بازیابی رمز عبور</a></div>
+    </div>
+  </div>
+  <!-- SCRIPTS -->
+  <script type="text/javascript" src="assets/js/jquery-2.2.3.min.js"></script>
+  <script type="text/javascript" src="assets/js/tether.min.js"></script>
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="assets/js/mdb.min.js"></script>
+  <script src="assets/js/animation.js"></script>
+  <script src="assets/js/index.js"></script>
+  <!-- custom scrollbar plugin -->
+	<script src="assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+  <script>
+    (function($){
+      $(window).on("load",function(){
+        $.mCustomScrollbar.defaults.scrollButtons.enable=true; //enable scrolling buttons by default
+        $.mCustomScrollbar.defaults.axis="y"; //enable 2 axis scrollbars by default
+        $("#content-md").mCustomScrollbar({theme:"minimal-dark",scrollEasing:"ease"});
+      });
+    })(jQuery);
+  </script>
+</body>
+</html>

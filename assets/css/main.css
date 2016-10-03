@@ -53,13 +53,14 @@ body {
 }
 
 .menu li {
-  color: lightgrey;
+  color: lightgrey !important;
   width: 1.6em;
   height: 1.6em;
   border-radius: 50%;
   display: inline-block;
   list-style: none;
   list-style-type: none;
+  text-decoration: none;
 }
 
 .hi-icon-wrap {
